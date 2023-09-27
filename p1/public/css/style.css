@@ -152,6 +152,9 @@ html, body{
     width: 45px;
     height: 45px;
 }
+.page-head{
+    font-size: 2em;
+}
 .section-name{
     font-weight: 400;
 }
@@ -184,4 +187,43 @@ html, body{
 }
 .product:hover{
     transform: scale(1.15);
+}
+.form input,select{
+    margin: 20px;
+    width: 100%;
+    font-size: 1.5em;
+}
+.form label{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.form{
+    width: 60%;
+}
+.form-btns{
+    margin-top: 2rem;
+    display: inline-block;
+}
+.form-btns a{
+    display: inline;
+}
+.btn {
+    text-align: center;
+    margin: 10px 2em;
+    padding: .2em .69em;
+    cursor: pointer;
+    text-decoration: none;
+}
+.form-btns  .btn-primary{
+    color: #FFF2FA;
+    background-color: #BF19A9;
+    border: none;
+    border-radius: .5em;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    transition-property: background-color;
+    font-size: 1.5em;
+}
+.form-btns .btn-primary:hover{
+    background-color: #99088E;
 }
