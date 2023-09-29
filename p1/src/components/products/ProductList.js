@@ -1,9 +1,11 @@
 import {getProductsApiCall,getProductsByCategoryApiCall} from "../../apiCalls/productApiCalls";
+import React from "react";
 function ProductList(){
     const micList = getProductsByCategoryApiCall("Microphone")
     const headphoneList = getProductsByCategoryApiCall("Headphones")
     return(
         <main className="container content-section">
+            <h2 className="page-head">OurProducts</h2>
             <h2 className="section-name">Microphones</h2>
             <section className="products">
                 {micList.map( mic =>(

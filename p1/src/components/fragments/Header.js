@@ -5,10 +5,10 @@ function Header(){
             <h1 className="ss-name">STEAM studio</h1>
             <nav className="nav main-nav" >
                 <ul>
-                    <li><Link to="/addPr">Add new</Link></li>
+                    <li><Link to="/addProduct">Add new</Link></li>
                     <li ><Link to="/products">Products</Link> </li>
-                    <li><a href="">Contact</a> </li>
-                    <li><a href="">Our Values</a> </li>
+                    <li><Link to="/contact" >Contact</Link> </li>
+                    <li><Link to="/ourValues">Our Values</Link> </li>
                 </ul>
             </nav>
         </header>

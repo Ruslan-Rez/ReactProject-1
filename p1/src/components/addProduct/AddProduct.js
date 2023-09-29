@@ -16,9 +16,7 @@ function AddProduct(){
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Add the new product to the productList array
         productList.push(formData);
-        // Reset the form, including the category field
         setFormData({
             _id: '',
             pName: '',
