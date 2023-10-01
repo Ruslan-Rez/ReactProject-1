@@ -1,2 +1,2 @@
 # ReactProject-1
- 
+ This is a project made fully in React.The project uses a mock-database written in js from which it takes the data to display in the 'products' category. You can also add new objects  to the mock-data. This project uses email.js for the contacform, after submiting a message i will recieve it via email sent to my personal acconut(ruslan4pjatk@gmail.com). This project also has Internationalization using i18n and is translated to three languages - English, Polish and Ukrainian.
