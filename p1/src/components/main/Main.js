@@ -1,25 +1,22 @@
 import {Link} from "react-router-dom";
 import React from "react";
-
+import { useTranslation } from 'react-i18next';
 function Main(){
+    const { t } = useTranslation();
     return(
         <main>
             <section className="home-head">
-                <h1 className="ss-name-home">STEAM studio - Elevating Podcasting Experiences </h1>
+                <h1 className="ss-name-home">{t('main-page.header')} </h1>
             </section>
             <section className="container content-section">
                 <section className="text-image-block">
                 <section className="desc">
-                    <h2 className="section-name">Explore Our Range:</h2>
+                    <h2 className="section-name">{t('main-page.explore-head')}</h2>
                     <aside>
-                        Discover a range of meticulously designed microphones
-                        and headphones that cater to beginners and seasoned
-                        podcasters alike. Whether you're delving into podcasting
-                        for the first time or looking to upgrade your setup,
-                        STEAM studio has the perfect solution for you.
+                        {t('main-page.explore-content')}
                     </aside>
                     <section className="form-btns">
-                    <Link to="/products" className="btn btn-primary ">Explore</Link>
+                    <Link to="/products" className="btn btn-primary ">{t('main-page.explore-btn')}</Link>
                     </section>
                 </section>
                 <figure>
@@ -31,16 +28,12 @@ function Main(){
                         <img src="/img/val2.png" alt="man holding a microphone"/>
                     </figure>
                     <section className="desc">
-                        <h2 className="section-name">Our Values:</h2>
+                        <h2 className="section-name">{t('main-page.values-head')}</h2>
                         <aside>
-                            At STEAM studio, we are driven by a profound commitment
-                            to excellence and a passion for enhancing the podcasting experience.
-                            Our values are the bedrock of our identity, shaping every aspect of
-                            our journey in the dynamic world of podcast equipment.Born out of a
-                            shared passion for podcasting...
+                            {t('main-page.values-content')}
                         </aside>
                         <section className="form-btns">
-                            <Link to="/ourValues" className="btn btn-primary ">Read more</Link>
+                            <Link to="/ourValues" className="btn btn-primary ">{t('main-page.values-btn')}</Link>
                         </section>
                     </section>
                 </section>

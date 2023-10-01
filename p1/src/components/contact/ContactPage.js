@@ -1,6 +1,9 @@
 import React, {useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
+
 function ContactPage(){
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({
         _name: '',
         user_email: '',
@@ -20,7 +23,7 @@ function ContactPage(){
                     user_email: '',
                     message: '',
                 });
-                window.alert("Message sent")
+                window.alert(t('contact.pop-up'))
 
             }, (error) => {
                 console.log(error.text);
@@ -28,11 +31,11 @@ function ContactPage(){
     }
     return(
         <main className="container content-section">
-            <h2 className="page-head">Contact us</h2>
+            <h2 className="page-head">{t('contact.contact')}</h2>
             <section className="text-image-block">
             <form ref={form} className="form" onSubmit={sendEmail}>
                 <section>
-                    <label htmlFor="_name">Your name:</label>
+                    <label htmlFor="_name">{t('contact.name')}</label>
                     <input
                         type="text"
                         id="_name"
@@ -40,10 +43,11 @@ function ContactPage(){
                         value={formData._name}
                         name="_name"
                         onChange={handleChange}
+                        minLength="5"
                     />
                 </section>
                 <section>
-                    <label htmlFor="user_email" >Your email:</label>
+                    <label htmlFor="user_email" >{t('contact.email')}</label>
                     <input
                         type="email"
                         id="user_email"
@@ -54,7 +58,7 @@ function ContactPage(){
                     />
                 </section>
                 <section>
-                    <label htmlFor="message">Your message</label>
+                    <label htmlFor="message">{t('contact.message')}</label>
                     <textarea
                         name="message"
                         rows="4"
@@ -62,10 +66,11 @@ function ContactPage(){
                         id="message"
                         value={formData.message}
                         onChange={handleChange}
+                        minLength="10"
                     />
                 </section>
                 <section className="form-btns">
-                <button type="submit" className="btn btn-primary">Send</button>
+                <button type="submit" className="btn btn-primary">{t('contact.send-btn')}</button>
                 </section>
             </form>
             <section className="location">
@@ -80,7 +85,7 @@ function ContactPage(){
                    >
                 </iframe>
                 <section>
-                    <span>Our location: BOSTON, MA 177 Huntington Ave Ste 1703</span>
+                    <span>{t('contact.location')}</span>
                 </section>
             </section>
         </section>

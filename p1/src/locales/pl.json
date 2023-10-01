@@ -1,0 +1,55 @@
+{
+  "main-page": {
+    "header": "STEAM studio - Podniesienie poziomu wrażeń z podcastów",
+    "explore-head": "Poznaj naszą ofertę:",
+    "explore-content": "Odkryj gamę starannie zaprojektowanych mikrofonów i słuchawek, które zadowolą zarówno początkujących, jak i doświadczonych podcasterów. Niezależnie od tego, czy po raz pierwszy zagłębiasz się w podcasting, czy chcesz ulepszyć swoją konfigurację, STEAM studio ma idealne rozwiązanie dla ciebe.",
+    "explore-btn": "Poznać",
+    "values-head": "Nasze wartości:",
+    "values-content": "W STEAM studio kierujemy się głębokim dążeniem do doskonałości i pasją ulepszania wrażeń z podcastów. Nasze wartości są podstawą naszej tożsamości, kształtując każdy aspekt naszej podróży w dynamicznym świecie podcastów sprzętu. Zrodziło się ze wspólnej pasji do podcastingu…",
+    "values-btn": "Czytać więcej"
+  },
+  "nav": {
+    "add-new": "Dodaj nowy",
+    "products": "Oferta",
+    "contact": "Kontakt",
+    "our-values": "Nasze wartości"
+  },
+  "products": {
+    "products": "Nasza Oferta",
+    "microphones": "Mikrofony",
+    "headphones": "Słuchawki"
+  },
+  "add-new": {
+    "add-new": "Dodaj Nowy Produkt",
+    "pr-name": "Nazwa produktu:",
+    "pr-cat": "Kategoria produktu:",
+    "pr-price": "Cena:",
+    "cancel-btn": "Anuluj",
+    "add-btn": "Dodaj produkt",
+    "microphones": "Mikrofony",
+    "headphones": "Słuchawki",
+    "sel-cat": "Wybierz kategorię",
+    "pop-up": "Produkt dodano pomyślnie"
+  },
+  "contact": {
+    "contact": "Skontaktuj się z nami",
+    "name": "Twoje imię:",
+    "email": "Twój e-mail:",
+    "message": "Twoja wiadomość",
+    "send-btn": "Wysłać",
+    "location": "Nasza lokalizacja: BOSTON, MA 177 Huntington Ave Ste 1703",
+    "pop-up": "Wiadomość wysłana"
+  },
+  "our-values": {
+    "our-values": "Nasze wartości",
+    "head-start": "W ",
+    "head-text-one": ", kierujemy się głębokim dążeniem do doskonałości i pasją ulepszania wrażeń z podcastów. Nasze wartości stanowią podstawę naszej tożsamości i kształtują każdy aspekt naszej podróży w dynamicznym świecie sprzętu do podcastów .Zrodzony ze wspólnej pasji do podcastów ",
+    "head-text-two": " to centrum innowacji i doskonałości. Nasz zespół składa się z ekspertów branżowych i twórców, którzy rozumieją wyjątkowe potrzeby twórców podcastów. Wierzymy w siłę głosu, a naszą misją jest dostarczanie Ci narzędzia wzmacniające Twój przekaz. Jakość, innowacja i społeczność to filary podtrzymujące wartości naszej firmy. Zobowiązujemy się do dostarczania produktów o bezkompromisowej jakości, wykorzystując najnowsze innowacje, aby pozostać w czołówce branży i wzmacniając poczucie społeczność w zróżnicowanym krajobrazie twórców podcastów.",
+    "craft-head": "Jakość wykonania:",
+    "craft-text": "Jesteśmy dumni z dostarczania produktów o niezrównanej jakości. Każdy oferowany przez nas mikrofon i para słuchawek przechodzi rygorystyczne testy w celu zapewnienia wyjątkowej wydajności i niezawodności. Wierzymy w zapewnianie podcastowcom narzędzi, które podnoszą poziom ich rzemiosła.",
+    "innovation-head": "Innowacja u podstaw:",
+    "innovation-text": "Innowacja napędza naszego ducha. Wykorzystujemy najnowocześniejsze technologie, aby pozostać w czołówce branży podcastów. Nieustannie przesuwając granice, zapewniamy naszym klientom najnowocześniejszy sprzęt, który spełnia zmieniające się wymagania wymagania cyfrowego krajobrazu dźwiękowego.",
+    "customer-head":"Nade wszystko zadowolenie klienta:",
+    "customer-text": "Nasi klienci są w centrum wszystkiego, co robimy. Naszym celem jest przekraczanie oczekiwań i zapewnienie satysfakcji każdemu podcasterowi, który wybierze  STEAM studio. Twój sukces jest naszym sukcesem, a my staramy się budować trwałe relacje w oparciu na zaufaniu i wzajemnych osiągnięciach."
+  }
+}
