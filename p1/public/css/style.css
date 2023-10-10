@@ -94,10 +94,10 @@ html, body{
 
 }
 
-.selected a{
+.nav a.active{
     background-size: 100% var(--border-width);
 }
-.selected a:hover{
+.nav a.active:hover{
     background-size: 100% 2px;
 }
 

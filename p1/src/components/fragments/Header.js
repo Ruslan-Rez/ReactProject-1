@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 function Header(){
     const { t, i18n } = useTranslation();
@@ -10,10 +10,10 @@ function Header(){
           <h1 className="ss-name"> <Link to="/">STEAM studio</Link><img src="/img/ss-logo-green.png"/> </h1>
             <nav className="nav main-nav" >
                 <ul>
-                    <li><Link to="/addProduct">{t('nav.add-new')}</Link></li>
-                    <li ><Link to="/products">{t('nav.products')}</Link> </li>
-                    <li><Link to="/contact" >{t('nav.contact')}</Link> </li>
-                    <li><Link to="/ourValues">{t('nav.our-values')}</Link> </li>
+                    <li><NavLink to="/addProduct">{t('nav.add-new')}</NavLink></li>
+                    <li ><NavLink to="/products">{t('nav.products')}</NavLink> </li>
+                    <li><NavLink to="/contact" >{t('nav.contact')}</NavLink> </li>
+                    <li><NavLink to="/ourValues">{t('nav.our-values')}</NavLink> </li>
                    <section className="lang-menu">
                     <figure>
                         <img src="/img/globe.png"/>
