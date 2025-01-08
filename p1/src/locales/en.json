@@ -17,7 +17,9 @@
   "products": {
     "products": "Our Products",
     "microphones": "Microphones",
-    "headphones": "Headphones"
+    "headphones": "Headphones",
+    "delete": "Delete",
+    "add-to-cart" : "Add"
   },
   "add-new": {
     "add-new": "Add a New Product",
@@ -40,6 +42,33 @@
     "location": "Our location: BOSTON, MA 177 Huntington Ave Ste 1703",
     "pop-up": "Message sent"
   },
+  "login": {
+    "form": {
+      "login": "Log in",
+      "registration": "Sign up",
+      "question": "",
+      "email": "E-mail",
+      "emails": "E-mails",
+      "password": "Password",
+      "enterPassword": "Enter new password",
+      "passwordNew": "New password",
+      "passLengthErr": "Password must be at least 6 characters long and meet other requirements",
+      "emailErr": "Invalid email address",
+      "passRequirementsErr": "Password must include at least one uppercase letter, one lowercase letter, one digit, and one special character among @$!%*?&",
+      "nameErr": "Invalid first name",
+      "surNameErr": "Invalid last name",
+      "impErr": "Invalid input"
+
+     },
+    "creation": {
+      "header": "Create new account",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "emailName" : "Email",
+      "create": "Create",
+      "loginLink": "Login link"
+    }
+    },
   "our-values": {
     "our-values": "Our Values",
     "head-start": "At ",
@@ -51,5 +80,19 @@
     "innovation-text": "Innovation fuels our spirit. We embrace cutting-edge technology to stay at the forefront of the podcasting industry. By continually pushing boundaries, we provide our customers with state-of-the-art equipment that meets the evolving demands of the digital soundscape.",
     "customer-head":"Customer Satisfaction Above All:",
     "customer-text": "Our customers are at the heart of everything we do. We are dedicated to exceeding expectations and ensuring the satisfaction of every podcaster who chooses STEAM studio. Your success is our success, and we strive to build lasting relationships based on trust and mutual accomplishment."
-  }
+  },
+
+  "registration": {
+    "form": {
+      "register": "Register",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password"
+    }
+
+}
+
+
 }

@@ -164,6 +164,82 @@ html, body{
 .lang-menu:hover ul {
     display: block;
 }
+
+.lang-menu, .user-menu {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+}
+
+.lang-menu button, .user-menu button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FFF2FA;
+    font-size: 15px;
+}
+
+.lang-menu ul, .user-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #E44CC7;
+    border: 1px solid #99088E;
+    border-radius: 5px;
+    z-index: 10;
+    min-width: 150px;
+}
+
+.lang-menu ul li, .user-menu ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li button, .user-menu ul li button {
+    width: 100%;
+    padding: 10px;
+    background-color: #E44CC7;
+    border: none;
+    color: #FFF2FA;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.lang-menu ul li button:hover, .user-menu ul li button:hover {
+    background-color: #BF19A9;
+}
+
+
+.lang-menu:hover ul, .user-menu:hover ul {
+    display: block;
+}
+
+
+.lang-menu ul.open, .user-menu ul.open {
+    display: block;
+}
+
+
+.lang-menu ul, .user-menu ul {
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .main-header{
     position: static;
     top: 0;
@@ -284,6 +360,19 @@ html, body{
     cursor: pointer;
     text-decoration: none;
 }
+.btn-danger{
+    color: #FFF2FA;
+    background-color: #e50505;
+    border: none;
+    border-radius: .5em;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    transition-property: background-color;
+    font-size: 1.2em;
+}
+.btn-danger:hover{
+    background-color: #a20000;
+}
 .form-btns  .btn-primary{
     color: #FFF2FA;
     background-color: #BF19A9;
@@ -355,4 +444,112 @@ html, body{
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.login-links{
+    margin: 10px 2em;
+
+}
+.login-links a{
+    font-weight: 600;
+    color: #99088E;
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.cart-item-image img{
+    width: 100px;
+    height: 100px;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 7px;
+    border: 1px solid #333;
+    background-color: white;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.cart-total-quantity{
+    text-align: right;
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: sticky;
+    top:0;
+    right: 0;
+    margin-bottom: 10px;
+}
+.cart-total-quantity-img{
+
+    width:25px;
+    height: 25px;
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: -3px;
 }
