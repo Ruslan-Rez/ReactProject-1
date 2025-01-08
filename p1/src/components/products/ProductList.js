@@ -9,13 +9,13 @@ function ProductList() {
     const [headphoneList, setHeadphoneList] = useState([]);
     const [loading, setLoading] = useState(true);
     const [cartCount, setCartCount] = useState(0);
-    const [user, setUser] = useState(null); // Store user information here
+    const [user, setUser] = useState(null);
     const { t } = useTranslation();
 
 
     useEffect(() => {
         const userData = JSON.parse(localStorage.getItem("user"));
-        setUser(userData); // Update the state with user info
+        setUser(userData);
         async function fetchProducts() {
             try {
                 const microphones = await getProductsByCategoryApiCall("Microphone");
@@ -29,17 +29,15 @@ function ProductList() {
             }
         }
         fetchProducts();
-    }, []); // Empty dependency array to run only once on component mount
+    }, []);
 
     if (loading) {
         return <div>Loading products...</div>; // Simple loading state
     }
     const handleDelete = async (productId, category) => {
         try {
-            // Perform the delete request to the backend
-            await deleteProduct(productId); // Call your deleteProduct function
+            await deleteProduct(productId);
 
-            // Update the appropriate list based on the category
             if (category === 'Microphone') {
                 setMicList((prevMicList) => prevMicList.filter((product) => product._id !== productId));
             } else if (category === 'Headphones') {
@@ -53,23 +51,17 @@ function ProductList() {
     };
 
     const handleAddToCart = (product) => {
-        // Get cart from localStorage or create a new one
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-        // Check if product already exists in the cart
         const existingProduct = cart.find((item) => item._id === product._id);
         if (existingProduct) {
-            // If the product is already in the cart, increment the quantity
             existingProduct.quantity += 1;
         } else {
-            // Otherwise, add the product to the cart with quantity 1
             cart.push({ ...product, quantity: 1 });
         }
 
-        // Save updated cart to localStorage
         localStorage.setItem("cart", JSON.stringify(cart));
 
-        // Optionally, update the state to reflect changes (useful if you're showing cart count in the UI)
         setCartCount(cart.length);
         window.alert("Added to cart!");
     };
@@ -89,7 +81,7 @@ function ProductList() {
                             {user && user.role === 'customer' ? (
                             <button
                                 className="btn btn-primary"
-                                onClick={() => handleAddToCart(mic)} // "Add to Cart" button
+                                onClick={() => handleAddToCart(mic)}
                             >
                                 {t('products.add-to-cart')}
                             </button>) : user && user.role==='employee' ?(
@@ -117,7 +109,7 @@ function ProductList() {
                             {user && user.role === 'customer' ? (
                                 <button
                                     className="btn btn-primary"
-                                    onClick={() => handleAddToCart(hph)} // "Add to Cart" button
+                                    onClick={() => handleAddToCart(hph)}
                                 >
                                     {t('products.add-to-cart')}
                                 </button>) : user && user.role==='employee' ?(
